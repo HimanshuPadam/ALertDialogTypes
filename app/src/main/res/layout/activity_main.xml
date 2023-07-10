@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Snackbar Length"
+        android:text="Alert "
         android:textSize="40sp"
         android:layout_marginHorizontal="50sp"
         android:textStyle="bold"
@@ -24,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Short"
-        android:textSize="40sp"
-        android:layout_marginTop="80sp"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
         />
 
     <Button
@@ -33,8 +33,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Long"
-        android:textSize="40sp"
-        android:layout_marginTop="50sp"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
         />
 
     <Button
@@ -42,8 +42,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Indefinite"
-        android:textSize="40sp"
-        android:layout_marginTop="50sp"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
         />
-    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvOutput"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnAlertList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog List"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnAlertMultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog Multiple Selection"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvText"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        />
+
 </LinearLayout>
