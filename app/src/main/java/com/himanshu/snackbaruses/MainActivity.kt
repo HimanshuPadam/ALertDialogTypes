@@ -99,13 +99,11 @@ class MainActivity : AppCompatActivity() {
                         "Selected item is ${animal[position]},$isChecked",
                         Toast.LENGTH_SHORT
                     ).show()
-
                     name = animal[position]
                 }
             alert.setPositiveButton("Yes"){_,_->
-                Toast.makeText(this, "Positive seleced", Toast.LENGTH_LONG).show()
-                tvText?.text = name
-
+                Toast.makeText(this, "Positive selected", Toast.LENGTH_LONG).show()
+                tvText?.text= name
         }.show()
     }
 }}
