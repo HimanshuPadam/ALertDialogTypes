@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.snackbar.Snackbar
+import com.himanshu.snackbaruses.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     var btnShort: Button?=null
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     var tvText : TextView?=null
     var number=0
     var name:String?=null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         btnAlertMultiple=findViewById(R.id.btnAlertMultiple)
         tvOutput=findViewById(R.id.tvOutput)
         tvText=findViewById(R.id.tvText)
+
         btnShort?.setOnClickListener {
             btnShort?.let {
                 Snackbar.make(it,"Short snackbar",Snackbar.LENGTH_SHORT).setAction("OK"){
@@ -88,7 +92,6 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
 
-
         btnAlertMultiple?.setOnClickListener {
             var alert = AlertDialog.Builder(this)
             alert.setCancelable(false)
@@ -104,6 +107,7 @@ class MainActivity : AppCompatActivity() {
             alert.setPositiveButton("Yes"){_,_->
                 Toast.makeText(this, "Positive selected", Toast.LENGTH_LONG).show()
                 tvText?.text= name
-        }.show()
+            }.show()
+        }
     }
-}}
+}

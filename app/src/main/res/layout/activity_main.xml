@@ -95,4 +95,13 @@
         android:layout_marginTop="10sp"
         />
 
+    <Button
+        android:id="@+id/btnCustomDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        />
+
 </LinearLayout>
